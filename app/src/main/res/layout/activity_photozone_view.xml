@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".phozone.Photozone_view">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/photozone_view_logo"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/chungsalogo"
+            android:contentDescription="광주청사교회로고" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/photozone_view_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/kimjungchulgothic_bold"
+                android:text="제목"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/photozone_view_update_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="photozone_view_update_btn"
+                    android:visibility="gone"
+                    android:text="수정" />
+
+                <Button
+                    android:id="@+id/photozone_view_delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="photozone_view_delete_btn"
+                    android:visibility="gone"
+                    android:text="삭제" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/photozone_view_image1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진1"/>
+
+            <ImageView
+                android:id="@+id/photozone_view_image2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진2"/>
+
+            <ImageView
+                android:id="@+id/photozone_view_image3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진3"/>
+
+            <ImageView
+                android:id="@+id/photozone_view_image4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진4"/>
+
+            <ImageView
+                android:id="@+id/photozone_view_image5"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진5"/>
+
+            <ImageView
+                android:id="@+id/photozone_view_image6"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진6"/>
+
+            <ImageView
+                android:id="@+id/photozone_view_image7"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진7"/>
+
+            <ImageView
+                android:id="@+id/photozone_view_image8"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진8"/>
+
+            <ImageView
+                android:id="@+id/photozone_view_image9"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진9"/>
+
+            <ImageView
+                android:id="@+id/photozone_view_image10"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+                android:contentDescription="포토존_사진10"/>
+
+            <TextView
+                android:id="@+id/photozone_view_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E5E8F4"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp"
+                android:fontFamily="@font/kimjungchulgothic_regular"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/photozone_view_comment_view_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:onClick="photozone_comment_view"
+                android:text="댓글보기" />
+
+            <LinearLayout
+                android:id="@+id/photozone_view_comment_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/photozone_comment_plus_content_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/photozone_view_bbs_editTextText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="#E5E8F4"
+                        android:gravity="start|top"
+                        android:hint="댓글내용을 입력해주세요"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:textColor="#000000"
+                        android:inputType="textMultiLine"
+                        android:lines="5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/photozone_view_comment_item_insert"
+                            android:layout_width="85dp"
+                            android:layout_height="45dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#0000ff"
+                            android:text="댓글등록"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/photozone_view_comment_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/photozone_view_left_arrow_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:backgroundTint="#FFFFFF"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/left_arrow" />
+
+                    <ImageButton
+                        android:id="@+id/photozone_view_right_arrow_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:backgroundTint="#FFFFFF"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/right_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

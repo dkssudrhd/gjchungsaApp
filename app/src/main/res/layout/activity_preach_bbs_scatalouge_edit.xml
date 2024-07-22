@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".sermon.edit.Preach_bbs_s_catalouge_edit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/chungsalogo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kimjungchulgothic_bold"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:layout_marginRight="20dp"
+            android:text="대분류" />
+
+        <Spinner
+            android:id="@+id/preach_bbs_scatalouge_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/scatalouge_edit_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/scatalouge_edit_insert_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimjungchulgothic_bold"
+                    android:textColor="#000000"
+                    android:text="추가" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/scatalouge_edit_left_arrow_button"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:adjustViewBounds="true"
+                        android:backgroundTint="#FFFFFF"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/left_arrow" />
+
+                    <ImageButton
+                        android:id="@+id/scatalouge_edit_right_arrow_button"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:adjustViewBounds="true"
+                        android:backgroundTint="#FFFFFF"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/right_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

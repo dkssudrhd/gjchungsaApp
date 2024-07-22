@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".weekly.edit.Weekly_edit_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/sermon_edit_logo_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/chungsalogo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/kimjungchulgothic_bold"
+            android:text="주보추가"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/weekly_edit_main_insert_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#0384F4"
+            android:textColor="#000000"
+            android:onClick="weekly_edit_insert_btn"
+            android:text="추가하기" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/kimjungchulgothic_bold"
+        android:text="주보편집"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+
+        <EditText
+            android:id="@+id/weekly_edit_main_search_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:hint="검색"/>
+
+        <Button
+            android:id="@+id/weekly_edit_main_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0384F4"
+            android:backgroundTintMode="multiply"
+            android:onClick="weekly_edit_search_btn"
+            android:text="검색"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/weekly_edit_main_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/weekly_edit_main_left_arrow_button"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:adjustViewBounds="true"
+                        android:backgroundTint="#FFFFFF"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/left_arrow" />
+
+                    <ImageButton
+                        android:id="@+id/weekly_edit_main_right_arrow_button"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:adjustViewBounds="true"
+                        android:backgroundTint="#FFFFFF"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/right_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

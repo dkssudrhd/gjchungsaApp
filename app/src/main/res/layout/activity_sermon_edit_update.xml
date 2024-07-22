@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".sermon.edit.Sermon_edit_update">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/sermon_edit_update_insert_logo"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/chungsalogo"
+                android:onClick="schedule_edit_insert_logo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kimjungchulgothic_bold"
+            android:text="설교수정"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp"
+            android:textSize="40sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:textColor="#000000"
+                        android:text="대분류"
+                        android:textSize="24sp" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/update_b_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:textColor="#000000"
+                        android:text="소분류"
+                        android:textSize="24sp" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/update_s_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimjungchulgothic_bold"
+                    android:textColor="#000000"
+                    android:text="설교제목"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/update_sermon_title_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="설교제목입력"
+                    android:inputType="text"
+                    android:textSize="24sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimjungchulgothic_bold"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#000000"
+                    android:text="설교자"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/update_sermon_preacher_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="ex) 백윤영 목사"
+                    android:inputType="text"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimjungchulgothic_bold"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#000000"
+                    android:text="성경본문"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/update_sermon_parse_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="ex) 창 1:1"
+                    android:inputType="text"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimjungchulgothic_bold"
+                    android:textColor="#000000"
+                    android:text="본문말씀"
+                    android:layout_marginTop="15dp"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/update_content_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#E5E8F4"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:hint="본문 말씀을 그대로 넣어주세요"
+                    android:inputType="textMultiLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:textColor="#000000"
+                        android:text="동영상 종류"
+                        android:textSize="24sp" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/update_video_type_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:spinnerMode="dropdown"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimjungchulgothic_bold"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#000000"
+                    android:text="동영상코드"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/update_sermon_bbs_line_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="ex) 6hQPVYbEi80"
+                    android:inputType="text"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimjungchulgothic_bold"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#000000"
+                    android:text="설교날짜"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/update_sermon_bbs_when_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="ex) 2023.09.03"
+                    android:inputType="text"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/update_sermon_insert_image_button"
+                        android:layout_width="125dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@color/design_default_color_primary_dark"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:onClick="image_btn"
+                        android:textColor="#000000"
+                        android:text="사진변경"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/update_sermon_insert_upload"
+                        android:layout_width="125dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@color/design_default_color_primary_dark"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:onClick="sermon_update_btn"
+                        android:textColor="#000000"
+                        android:text="수정"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/update_sermon_insert_imageview"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

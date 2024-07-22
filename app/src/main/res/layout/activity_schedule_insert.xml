@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".schedule.edit.Schedule_insert">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/schedule_edit_insert_logo"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/chungsalogo"
+                android:onClick="schedule_edit_insert_logo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kimjungchulgothic_bold"
+            android:text="교회일정추가"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimjungchulgothic_bold"
+                    android:text="일정 분류 이름"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/schedule_insert_editTextText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ex) 2023년 08년"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/schedule_insert_image_button"
+                        android:layout_width="125dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@color/design_default_color_primary_dark"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:text="사진선택"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/schedule_insert_upload"
+                        android:layout_width="125dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@color/design_default_color_primary_dark"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:onClick="clickUpload"
+                        android:text="업로드"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/schedule_insert_imageview"
+                    android:layout_width="270dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/comment_item_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="4"
+            android:fontFamily="@font/kimjungchulgothic_bold"
+            android:text="유저이름"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/comment_item_creation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/kimjungchulgothic_light"
+            android:gravity="right"
+            android:text="23-08-22 15:42" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7FA"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/comment_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/kimjungchulgothic_regular"
+            android:text="내용"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/comment_item_go_insert"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp"
+                android:text="답변" />
+
+            <Button
+                android:id="@+id/comment_item_update"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:text="수정"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/comment_item_delete"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:text="삭제"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/camp_comment_item_comment_plus_content_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/camp_comment_item_editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#FEFEFE"
+                android:gravity="start|top"
+                android:hint="댓글내용을 입력해주세요"
+                android:inputType="textMultiLine"
+                android:lines="5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/comment_item_insert"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#0000ff"
+                    android:text="댓글등록"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/camp_comment_item_recylerView_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/camp_comment_item_comment_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

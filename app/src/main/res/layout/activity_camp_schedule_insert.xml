@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".camp.Camp_schedule.edit.Camp_schedule_insert"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/chungsalogo" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/camp_schedule_insert_title_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/kimjungchulgothic_bold"
+                    android:text="캠프 추가"
+                    android:textColor="#000000"
+                    android:textSize="40sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:text="제목"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/camp_schedule_title_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="ex) 사람들이 보는 내용"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:text="기간"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/camp_schedule_type_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="ex) 1박 2일"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:text="지역"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/camp_schedule_where_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="ex) 제주도"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:text="가정교회"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/camp_schedule_what_family_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="ex) 1-1 가정교회"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:text="출발날짜"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/camp_schedule_when_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="ex) 2023.09.17"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:text="총금액"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/camp_schedule_how_much_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="ex) 30만원"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:text="양육사"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/camp_schedule_family_name_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="ex) 박회열/강남숙"
+                        android:inputType="text"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/kimjungchulgothic_bold"
+                        android:text="인원"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:text="어른"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/camp_schedule_adult_no_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="00"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:text="명   아이"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/camp_schedule_kid_no_editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="00"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:text="명"
+                        android:textColor="#000000"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/camp_schedule_photo_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="photo_insert_btn"
+                        android:text="사진 넣기" />
+
+                    <Button
+                        android:id="@+id/camp_schedule_time_insert_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="time_insert_btn"
+                        android:text="시간표 넣기" />
+
+                    <Button
+                        android:id="@+id/camp_schedule_content_insert_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="content_insert_btn"
+                        android:text="내용 넣기" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/camp_schedule_photo_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/camp_schedule_insert_image1_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Setinsert_image1_btn"
+                        android:text="첫번째 이미지 업로드" />
+
+                    <ImageView
+                        android:id="@+id/camp_schedule_insert_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/camp_schedule_insert_image2_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Setinsert_image2_btn"
+                        android:text="두번째 이미지 업로드" />
+
+                    <ImageView
+                        android:id="@+id/camp_schedule_insert_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/camp_schedule_insert_image3_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Setinsert_image3_btn"
+                        android:text="세번째 이미지 업로드" />
+
+                    <ImageView
+                        android:id="@+id/camp_schedule_insert_image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/camp_schedule_insert_image4_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="Setinsert_image4_btn"
+                        android:text="네번째 이미지 업로드" />
+
+                    <ImageView
+                        android:id="@+id/camp_schedule_insert_image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/camp_schedule_recycler_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/camp_time_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <Button
+                        android:id="@+id/camp_time_day_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="추가" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/camp_schedule_content_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/camp_schedule_content_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="#E5E8F4"
+                        android:layout_marginTop="10dp"
+                        android:hint="설명을 적어주세요"
+                        android:textColor="#000000"
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/camp_time_check_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="setCamp_time_check_btn"
+                    android:text="확인" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

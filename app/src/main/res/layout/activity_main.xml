@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/main_edit_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/gear"
+                android:backgroundTint="#0027FF"
+                android:backgroundTintMode="src_in"
+                android:onClick="main_edit_go"
+                android:scaleType="centerCrop"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/main_login_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/login_button"
+                android:backgroundTint="#0027FF"
+                android:backgroundTintMode="src_in"
+                android:onClick="login_btn"
+                android:scaleType="centerCrop"
+                android:contentDescription="카카오톡 로그인" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/logo_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/chungsalogo"
+                android:contentDescription="광주청사교회로고" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical">
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/sliderViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/viewFadingEdge"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/bg_fading_edge"
+                    app:layout_constraintBottom_toBottomOf="@id/sliderViewPager" />
+
+                <LinearLayout
+                    android:id="@+id/layoutIndicators"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@id/viewFadingEdge"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/sermon_main"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sermon_btn"
+                    android:contentDescription="설교보기버튼"  />
+
+                <ImageButton
+                    android:id="@+id/weekly"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/weekly_btn"
+                    android:onClick="weekly_push"
+                    android:contentDescription="주보보기버튼" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/introduction"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/introduction_btn"
+                    android:contentDescription="담임목사 소개버튼"/>
+
+                <ImageButton
+                    android:id="@+id/schedule"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/schedule_btn"
+                    android:onClick="schedule_btn"
+                    android:contentDescription="교회일정버튼" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/worshipguide"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/workshipguide_btn"
+                    android:contentDescription="예배안내버튼"/>
+
+                <ImageButton
+                    android:id="@+id/offering"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/offering_btn"
+                    android:contentDescription="온라인 헌금 버튼"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/photozone"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gallery_btn"
+                    android:contentDescription="갤러리 버튼"/>
+
+                <ImageButton
+                    android:id="@+id/camp_icon"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/camp_icon"
+                    android:contentDescription="캠프 버튼" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#E5E7F4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:text="이메일무단수집거부" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:layout_marginLeft="20dp"
+                        android:onClick="go_terms_of_use"
+                        android:text="이용약관" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:onClick="go_privacy"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:layout_marginLeft="20dp"
+                        android:text="개인정보취급방침" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:layout_marginLeft="20dp"
+                        android:text="(우)62371 광주광역시 광산구 사암로 106번길 115" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="9sp"
+                        android:text="광주청사교회 : 062-943-8656~7 | 연구소 : 070-4458-7225 | E-mail : PPugipna@gmail.com" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="9sp"
+                        android:text="Copyright (c) Chungsa Church. All rights Reserved." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/kimjungchulgothic_regular"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="9sp"
+                        android:text="Developer Min Gi Han | Designed By Geoun Mu Park" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

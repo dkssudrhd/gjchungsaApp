@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".login.KakaoApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gjchungsa"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".advertisement.Advertisement_view"
+            android:theme="@style/DialogTheme"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".sermon.Series_sermon.edit.Series_sermon_edit_insert"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".sermon.Series_sermon.edit.Series_sermon_edit"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".sermon.edit.Preach_catalogue_s_edit"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".sermon.edit.Preach_bbs_s_catalouge_edit"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".sermon.Series_sermon.Series_sermon_list"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".phozone.Photozone_view"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".phozone.edit.Photozone_insert"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".phozone.Photozone_list"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".introduction.Introduction_main"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".worshipguide.Worshipguide_main"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".camp.Camp_schedule.Camp_schedule_view"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".camp.Camp_schedule.edit.Camp_schedule_insert"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".camp.Camp_schedule.Camp_schedule_list"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".offering.offering_view"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".camp.edit.Camp_mark_insert"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".weekly.edit.Weekly_edit_insert"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".weekly.edit.Weekly_edit_view"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".weekly.edit.Weekly_edit_main"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main_edit.user_edit.Chungsa_user_edit_view"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main_edit.user_edit.main_user_edit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main_edit.main_edit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sermon.edit.Sermon_edit_update"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sermon.edit.Sermon_delete"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sermon.edit.Sermon_main"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sermon.edit.Sermon_insert"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sermon.edit.Sermon_edit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.edit.Schedule_delete"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.Schedule_edit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.edit.Schedule_insert"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.Schedule_view"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.KakaoLogin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camp.Camp_mark_bbs_view"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camp.Camp_recommend_bbs"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camp.Camp_recommend_list"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camp.Camp_recommend"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".camp.Camp_Main"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".weekly.Weekly_image"
+            android:exported="false" />
+        <activity
+            android:name=".weekly.Weekly_view"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".weekly.Weekly_list"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sermon.Sermon_view_youtube"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:exported="false"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".sermon.Sermon_view_vimeo"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:exported="false"
+            android:screenOrientation="unspecified" />
+        <activity
+            android:name=".sermon.Sermon_list"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao${NATIVE_APP_KEY}://oauth" -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakaofa58851e18a13f286914ecf830077be3" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="fa58851e18a13f286914ecf830077be3" />
+        <meta-data
+            android:name="com.kakao.vectormap.APP_KEY"
+            android:value="fa58851e18a13f286914ecf830077be3" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

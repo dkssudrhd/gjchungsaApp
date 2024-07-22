@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".offering.offering_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/camp_main_logo_button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/chungsalogo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="#E3E7F3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일반헌금"
+            android:fontFamily="@font/kimjungchulgothic_bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="십일조와 주정헌금 및 일상적으로 내는 헌금이다.\n수입의 십분의 일을 뗴어 하나님의 것으로 구분하는 것은 재정의 주인이신 하나님을 인정하는 행위입니다."
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/kimjungchulgothic_regular"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="건축헌금"
+            android:fontFamily="@font/kimjungchulgothic_bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="예배당을 신축하고 보수하는 목적을 위한 헌금이다.\n건축에 필요한 차용금을 상환하며 차후에 있을 신축 공사를 위해 사용됩니다."
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/kimjungchulgothic_regular"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선교헌금"
+            android:fontFamily="@font/kimjungchulgothic_bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="필리핀, 영국, 상해 및 기타 지역에 파송한 선교사와 사역자들을 섬기는 헌금이다.\n또한 샬롬스쿨과 작은 교회와 기관들을 섬기고 있다."
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/kimjungchulgothic_regular"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="목양선교"
+            android:fontFamily="@font/kimjungchulgothic_bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="담임목사님의 사역을 돕기 위한 헌금이다.\n어려운 성도들을 돕고, 사역자들을 격려하는 등 목양에 필요한 부분을 지원한다."
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/kimjungchulgothic_regular"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="#C0CAE5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="계 좌 안 내"
+                android:fontFamily="@font/kimjungchulgothic_bold"
+                android:textColor="#000000"
+                android:layout_margin="10dp"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="일반헌금: 새마을금고(광주청사교회) 9002-1955-2879-2"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/kimjungchulgothic_regular"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="건축헌금: 새마을금고(광주청사교회) 9002-1955-3009-6"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/kimjungchulgothic_regular"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="선교헌금: 농 협(광주청사교회) 351-0399-5841-83"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/kimjungchulgothic_regular"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="목양선교: 농 협(백윤영) 302-0455-9527-51"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:fontFamily="@font/kimjungchulgothic_regular"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

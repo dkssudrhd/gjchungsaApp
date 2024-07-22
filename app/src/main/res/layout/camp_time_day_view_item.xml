@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linearlayout_border">
+
+    <TextView
+        android:id="@+id/camp_time_day_view_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:fontFamily="@font/kimjungchulgothic_bold"
+        android:text="Day 1"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/camp_time_day_view_recycerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:id="@+id/camp_time_day_view_photolinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/camp_time_day_view_constraintLayout"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:layout_margin="5dp">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/camp_time_day_view_ViewPager"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/camp_time_day_view_viewFadingEdge"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/bg_fading_edge"
+            app:layout_constraintBottom_toBottomOf="@id/camp_time_day_view_ViewPager" />
+
+        <LinearLayout
+            android:id="@+id/camp_time_day_view_layoutIndicators"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/camp_time_day_view_viewFadingEdge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</LinearLayout>

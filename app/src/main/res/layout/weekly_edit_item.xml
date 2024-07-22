@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#89ADCA">
+
+    <TextView
+        android:id="@+id/Weekly_edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:text="2023.08.13 주보"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/Weekly_edit_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="20sp"
+        android:text="삭제" />
+
+
+</LinearLayout>

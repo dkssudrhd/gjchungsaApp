@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#183B59</color>
+    <color name="colorPrimaryDark">#183B59</color>
+    <color name="colorAccent">#F2CA52</color>
+    <color name="green">#9BBF63</color>
+    <color name="brown">#8C4D3F</color>
+    <color name="gray">#BFBFBF</color>
+    <color name="gray_2">#808080</color>
+    <color name="title">#000000</color>
+    <color name="translucent">#80B8B6B6</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="kakao_yellow">#ffcd00</color>
+    <color name="mapview_divider">#cccccc</color>
+    <color name="desc">#535353</color>
+    <color name="blue_accent">#ff1f8cff</color>
+    <color name="blue_accent_light">#ff3396ff</color>
+    <color name="blue_kakaomap_light">#ff3b9aff</color>
+</resources>

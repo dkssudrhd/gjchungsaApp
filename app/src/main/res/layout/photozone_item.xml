@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/photozone_item_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/photozone_imageview"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/example" />
+
+        <TextView
+            android:id="@+id/photozone_textview"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/kimjungchulgothic_regular"
+            android:gravity="center"
+            android:text="샬롬스쿨초등부의 \n졸업여행"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
