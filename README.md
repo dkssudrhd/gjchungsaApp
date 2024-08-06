@@ -17,7 +17,7 @@ homepage  👉 http://chungsa.or.kr
 
 <br>
 
-## 아키 텍쳐
+## 사용흐름
 ![gjchungsa drawio](https://github.com/user-attachments/assets/701cdd53-56c0-4d98-9965-8eb76a7453c5)
 
 - 카카오 로그인으로 회원정보를 얻어와 관리하도록 구성하였습니다.
