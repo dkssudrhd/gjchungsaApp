@@ -4,7 +4,6 @@
 API 서버는 추후 Java Spring으로 업데이트할 예정입니다.<br>
 
 > 링크<br>
-google play store 👉 https://play.google.com/store/apps/details?id=com.gj.gjchungsa&hl=ko<br>
 homepage  👉 http://chungsa.or.kr
 
 <br>
