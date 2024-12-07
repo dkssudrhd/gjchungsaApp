@@ -6,7 +6,7 @@
 
 
 > 링크<br>
-homepage  👉 http://chungsa.or.kr
+homepage 링크  👉 http://chungsa.or.kr
 
 <br>
 
